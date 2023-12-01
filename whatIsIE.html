@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>IE2023-WhatIsIE</title>
+  <meta name="description" content="サイトの説明を入力">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="WhatIsIE.css">
+
+  <!-- [if lt IE 9] -->
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <!-- [endif] -->
+
+  <script src="IE_web.js"></script>
+</head>
+
+<body>
+  <div class="for-pc">
+    <header class="header">
+      <div class="header-inner inner">
+        <a href="#"><img class="header-title" src="img/IE_logo.png"></a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Home</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="#"                              ><b>What is IE</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Element. 01</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Element. 02</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Element. 03</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Activites</b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ここから書く(PC) -->
+      
+    </main>
+  </div>
+
+
+  <div class="for-sp">
+    <header class="header"><!-- https://yuntu-tek.com/hamburger-menu/ -->
+      <div class="logo"><a href="#"><img class="header-title" src="img/IE_logo.png"></a></div><!-- /.logo -->
+
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="drawer">
+
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input type="checkbox" id="drawer-check" class="drawer-hidden">
+
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer-check" class="drawer-open"><span></span></label>
+
+        <!-- メニュー -->
+        <nav class="drawer-content">
+          <ul class="drawer-list">
+            <li class="drawer-item">
+              <a class="header-nav-item-link" href="#"><b>Home</b></a>
+            </li><!-- /.drawer-item -->
+            <li class="drawer-item">
+              <a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Element.
+                  01</b></a>
+            </li><!-- /.drawer-item -->
+            <li class="drawer-item">
+              <a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Element.
+                  02</b></a>
+            </li><!-- /.drawer-item -->
+            <li class="drawer-item">
+              <a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Element.
+                  03</b></a>
+            </li><!-- /.drawer-item -->
+            <li class="drawer-item">
+              <a class="header-nav-item-link" href="#" style="text-decoration:none;"><b>Activites</b></a>
+            </li><!-- /.drawer-item -->
+          </ul><!-- /.drawer-list -->
+        </nav>
+
+      </div>
+    </header>
+
+    <main>
+      <!-- ここから書く(SP) -->
+    
+    </main>
+  </div>
+
+</body>
