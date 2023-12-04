@@ -181,4 +181,149 @@ body {
     margin: px 111px 8%; 
   }
 
+  h1{
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+  }
+  img{
+    margin-top: 0;
+  }
+  
+  .margin80{
+    margin-top: 80px;
+  }
+  .margin240{
+    margin-top: 240px;
+  }
 
+  .title{
+    color: #000;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .concept-title{
+    color: #000;
+    text-align: center;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .concept-name{
+    color: #404040;
+    font-family: Futura;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%; /* 80px */
+    letter-spacing: 3.2px;
+  }
+
+  .concept-p{
+    color: #404040;
+    font-family: Futura;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%;
+    letter-spacing: 1.6px;
+  }
+
+  .concept-field {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    }
+
+  .content-space{
+    margin-right: 80px;
+  }
+
+  .structure-title{
+    color: #000;
+    text-align: center;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+  
+  .process-title{
+    color: #000;
+    text-align: center;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .down{
+    margin: 20 0;
+  }
+  
+  .process-p{
+    color: #000;
+    font-family: YuGothic;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .gallery-title{
+    color: #000;
+    text-align: center;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+    
+  }
+
+  .gallery-img01{
+    margin-right: 66px;
+  }
+  .gallery-img02{
+    margin-top: 95px;
+  }
+  .gallery-img03{
+    margin-left: 68px;
+  }
+  .gallery-img04{
+    margin-bottom: 21px;
+    margin-right: 107px;
+  }
+  .gallery-img05{
+    margin-top: 61px;
+  }
+  .gallery-img06{
+    margin-bottom: 26px;
+    margin-left: 107px;
+  }
+
+  .footer{
+    color: #000;
+    font-family: Futura;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 185px;
+    margin-bottom: 30px;
+  }
