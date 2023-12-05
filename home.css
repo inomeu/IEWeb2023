@@ -272,10 +272,13 @@ figure.hover-parent {
   display: flex;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   /* padding: 30px; */
   }
+
   figure.hover-parent:hover .hover-mask {
     opacity: 1;
+    
     }
 
     .jc-sa {
