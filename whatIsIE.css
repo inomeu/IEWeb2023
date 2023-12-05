@@ -90,6 +90,39 @@ body {
   .logo {
     font-size: 24px;
   }
+
+  /* main */
+
+  .WhatIsIE {
+    margin-top: 80px;
+    color: #000;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .IE_des {
+    margin-top: 80px;
+    color: #000;
+    font-family: YuGothic;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .AboutLOGO {
+    color: #000;
+    font-family: Futura;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
   
   /*------------------------------
   
