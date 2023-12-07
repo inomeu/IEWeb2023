@@ -240,7 +240,7 @@ body {
   .concept-p{
     color: #404040;
     /* font-family: Futura; */
-    font-size: 16px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 500;
     line-height: 250%;
@@ -254,7 +254,7 @@ body {
     }
 
   .content-space{
-    margin-right: 80px;
+    margin-right: 40px;
   }
 
   .structure-title{
@@ -309,22 +309,22 @@ body {
   }
 
   .gallery-img01{
-    margin-right: 68px;
+    margin-right: 40px;
   }
   .gallery-img02{
-    margin-top: 95px;
+    margin-top: 80px;
   }
   .gallery-img03{
-    margin-left: 68px;
+    margin-left: 40px;
   }
   .gallery-img04{
-    margin-right: 68px;
+    margin-right: 40px;
   }
   .gallery-img05{
-    margin-top: 61px;
+    margin-top: 80px;
   }
   .gallery-img06{
-    margin-left: 68px;
+    margin-left: 40px;
   }
 
   .footer{

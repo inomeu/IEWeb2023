@@ -191,6 +191,9 @@ body {
     margin-top: 0;
   }
   
+  .margin50{
+    margin-top: 50px;
+  }
   .margin80{
     margin-top: 80px;
   }
@@ -246,7 +249,7 @@ body {
     }
 
   .content-space{
-    margin-right: 80px;
+    margin-right: 40px;
   }
 
   .structure-title{
@@ -296,40 +299,41 @@ body {
     
   }
 
-  .gallery-content{
+/*   .gallery-content{
     width: 240px;
     height: auto;
-  }
+  } */
 
-  li {
+  /*.gallery-content li {
     list-style:none;
     display:table-cell;
     padding:80px; 
-    width:240px;/*幅を指定*/
-    height:178px;/*高さを指定*/
-    vertical-align:middle;/*縦方向を中央揃え*/
-    text-align:center;/*横方向を中央揃え*/
-    }
+    width:240px;
+    height:178px;
+    vertical-align:middle;
+    text-align:center;
+    }*/
 
     .gallery-img01{
-      margin-right: 68px;
+      margin-right: 40px;
+      padding-bottom: 18px;
     }
     .gallery-img02{
-      margin-top: 95px;
+      margin-top: 80px;
     }
     .gallery-img03{
-      margin-left: 68px;
+      margin-left: 40px;
     }
     .gallery-img04{
-      margin-right: 68px;
+      margin-right: 40px;
     }
     .gallery-img05{
-      margin-top: 61px;
+      margin-top: 40px;
     }
     .gallery-img06{
-      margin-left: 68px;
+      margin-left: 40px;
+      padding-bottom: 15px;
     }
-  
 
   /* .gallery-img01{
     margin-right: 920px;
@@ -355,7 +359,7 @@ body {
 
   .footer{
     color: #000;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -364,4 +368,122 @@ body {
     margin-bottom: 30px;
   }
 
+  span {
+    display: inline-block;
+    }
 
+    .sp-title-name{
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+  
+    .sp-concept-title{
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+  
+    .sp-concept-name{
+      color: #404040;
+      /* font-family: Futura; */
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 250%; /* 80px */
+      letter-spacing: 3.2px;
+    }
+  
+    .sp-concept-p{
+      color: #404040;
+      /* font-family: Futura; */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 250%;
+      letter-spacing: 1.6px;
+    }
+  
+    .sp-structure-title{
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+    
+    .sp-process-title{
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+  
+    .sp-process-p{
+      color: #000;
+      /* font-family: YuGothic; */
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  
+    .sp-gallery-title{
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+  
+    .sp-gallery-img01{
+      margin-top: 80px;
+      margin-bottom: 18px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .sp-gallery-img02{
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .sp-gallery-img03{
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .sp-gallery-img04{
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .sp-gallery-img05{
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .sp-gallery-img06{
+      margin-top: 40px;
+      margin-bottom: 15px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .structure-img{
+      padding-top: 40px;
+    }
