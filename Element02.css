@@ -203,7 +203,7 @@ body {
 
   .title{
     color: #000;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -214,7 +214,7 @@ body {
   .concept-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -224,7 +224,7 @@ body {
 
   .concept-name{
     color: #404040;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -234,7 +234,7 @@ body {
 
   .concept-p{
     color: #404040;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -255,7 +255,7 @@ body {
   .structure-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -266,7 +266,7 @@ body {
   .process-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -290,7 +290,7 @@ body {
   .gallery-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
