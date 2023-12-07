@@ -296,8 +296,44 @@ body {
     
   }
 
-  .gallery-img01{
-    margin-right: 66px;
+  .gallery-content{
+    width: 240px;
+    height: auto;
+  }
+
+  li {
+    list-style:none;
+    display:table-cell;
+    padding:80px; 
+    width:240px;/*幅を指定*/
+    height:178px;/*高さを指定*/
+    vertical-align:middle;/*縦方向を中央揃え*/
+    text-align:center;/*横方向を中央揃え*/
+    }
+
+    .gallery-img01{
+      margin-right: 68px;
+    }
+    .gallery-img02{
+      margin-top: 95px;
+    }
+    .gallery-img03{
+      margin-left: 68px;
+    }
+    .gallery-img04{
+      margin-right: 68px;
+    }
+    .gallery-img05{
+      margin-top: 61px;
+    }
+    .gallery-img06{
+      margin-left: 68px;
+    }
+  
+
+  /* .gallery-img01{
+    margin-right: 920px;
+    margin-left: 280px;
   }
   .gallery-img02{
     margin-top: 95px;
@@ -315,7 +351,7 @@ body {
   .gallery-img06{
     margin-bottom: 26px;
     margin-left: 107px;
-  }
+  } */
 
   .footer{
     color: #000;
