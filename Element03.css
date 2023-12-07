@@ -84,7 +84,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.80);
   }
   
   .logo {
@@ -196,6 +196,9 @@ body {
     margin-top: 0;
   }
   
+  .margin50{
+    margin-top: 50px;
+  }
   .margin80{
     margin-top: 80px;
   }
@@ -205,7 +208,7 @@ body {
 
   .title{
     color: #000;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -216,7 +219,7 @@ body {
   .concept-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -226,7 +229,7 @@ body {
 
   .concept-name{
     color: #404040;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -236,7 +239,7 @@ body {
 
   .concept-p{
     color: #404040;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -257,7 +260,7 @@ body {
   .structure-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -268,7 +271,7 @@ body {
   .process-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -279,10 +282,14 @@ body {
   .down{
     margin: 20 0;
   }
+
+  .process-content{
+    margin-top: 80px;
+  }
   
   .process-p{
     color: #000;
-    font-family: YuGothic;
+    /* font-family: YuGothic; */
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -292,7 +299,7 @@ body {
   .gallery-title{
     color: #000;
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -302,7 +309,7 @@ body {
   }
 
   .gallery-img01{
-    margin-right: 66px;
+    margin-right: 68px;
   }
   .gallery-img02{
     margin-top: 95px;
@@ -311,20 +318,18 @@ body {
     margin-left: 68px;
   }
   .gallery-img04{
-    margin-bottom: 21px;
-    margin-right: 107px;
+    margin-right: 68px;
   }
   .gallery-img05{
     margin-top: 61px;
   }
   .gallery-img06{
-    margin-bottom: 26px;
-    margin-left: 107px;
+    margin-left: 68px;
   }
 
   .footer{
     color: #000;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -332,3 +337,121 @@ body {
     margin-top: 185px;
     margin-bottom: 30px;
   }
+
+  /* sp */
+
+  .sp-title-name{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-concept-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-concept-name{
+    color: #404040;
+    /* font-family: Futura; */
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%; /* 80px */
+    letter-spacing: 3.2px;
+  }
+
+  .sp-concept-p{
+    color: #404040;
+    /* font-family: Futura; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%;
+    letter-spacing: 1.6px;
+  }
+
+  .sp-structure-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+  
+  .sp-process-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-process-p{
+    color: #000;
+    /* font-family: YuGothic; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .sp-gallery-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-gallery-img01{
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img02{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img03{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img04{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img05{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img06{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  
+  
+  span {
+    display: inline-block;
+    }
