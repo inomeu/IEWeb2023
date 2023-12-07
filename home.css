@@ -509,6 +509,15 @@ span {
   justify-content: center;
 }
 
+.sp-activity-content p{
+  color: #000;
+  /* font-family: Futura; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .sp-activity-margin{
   margin-right: 40px;
 }
