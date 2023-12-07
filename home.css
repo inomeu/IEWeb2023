@@ -137,10 +137,6 @@ main {
   justify-content: space-around;
 }
 
-.prod_logo {
-  width: 260px;
-  height: 130px;
-}
 
 .product{
   display: flex;
@@ -324,12 +320,13 @@ figure.hover-parent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 10px 20px;
   background: rgba(255, 255, 255, 0.80);
 }
 
 .logo {
   font-size: 24px;
+  padding-top: 5px;
 }
 
 
@@ -453,48 +450,37 @@ span {
 }
 
 .sp-A h2{
-  display: flex;
-  width: 162px;
-  height: 40px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  color: #000;
+/* font-family: Futura; */
+font-size: 29.838px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .sp-B h2{
-  display: flex;
-  width: 162px;
-  height: 40px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  color: #000;
+/* font-family: Futura; */
+font-size: 29.838px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .sp-C h2{
-  display: flex;
-  width: 162px;
-  height: 40px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  color: #000;
+/* font-family: Futura; */
+font-size: 29.838px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .sp-product-more{
   margin-top: 30px;
+  margin-bottom: 80px;
 }
 
 .sp-activity-title{
-  margin-top: 240px;
+  margin-top: 160px;
   color: #000;
   /* font-family: Futura; */
   font-size: 48px;
@@ -509,24 +495,31 @@ span {
   justify-content: center;
 }
 
-.sp-activity-content p{
-  color: #000;
-  /* font-family: Futura; */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 .sp-activity-margin{
   margin-right: 40px;
 }
 
 .sp-activity-content p{
   color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sp-activity-content p{
+  color: #000;
 /* font-family: Futura; */
-font-size: 29.838px;
+font-size: 24px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+}
+
+.suga-url{
+  color: inherit;
+}
+
+.margin80{
+  margin-top: 80px;
 }
