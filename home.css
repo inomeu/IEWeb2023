@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 body {
-  font-family: Futura, 'Noto Sans JP', 'Century Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+  font-family: Futura, 'Noto Sans JP', 'Century Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif; 
 }
 
 .for-pc {
@@ -12,7 +12,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 837px) {
   .for-pc {
     display: none;
   }
@@ -36,6 +36,7 @@ body {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.80);
+  z-index: 100;               /* 重なり順指定 */
 }
 
 .header-inner {
@@ -117,6 +118,8 @@ main {
   justify-content: center;
 }
 
+
+
 .prod_title {
   display: flex;
   justify-content: space-around;
@@ -129,20 +132,52 @@ main {
 }
 
 .prod_logo {
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-around;
 }
 
-.prod_logo img {
-  width: 260px;
-  height: 130px;
+
+.product{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.A h2{
+  margin-bottom: 80px;
+  color: #000;
+  font-size: 29.838px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.B h2{
+  margin-bottom: 80px;
+  color: #000;
+  font-size: 29.838px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.C h2{
+  margin-bottom: 80px;
+  color: #000;
+  font-size: 29.838px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.prod-more{
+  margin-top: 110px;
 }
 
 .prod_more {
   margin-top: 116px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .Activity {
@@ -173,18 +208,127 @@ main {
   margin-right: 100px;
 }
 
+.role{
+  
+  color: #000;
+  text-align: center;
+  /* font-family: Futura; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 250%; /* 60px */
+}
+.name{
+  margin-bottom: 80px;
+  margin-top: 0px;
+  color: #000;
+  text-align: center;
+  /* font-family: Futura; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 250%; /* 60px */
+}
+
+
+
+figure.hover-parent {
+  margin:0 auto;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  }
+
+  figcaption.hover-mask {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  /* padding: 30px; */
+  }
+
+  .comment{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  figure.hover-parent:hover .hover-mask {
+    opacity: 1;
+    
+    }
+
+    .jc-sa {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .members{
+      margin: 0 10%;
+    }
+
+    .members-title{
+      margin-top: 240px;
+      /* margin-bottom: 70px; */
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+    .teacher{
+      margin: 0 10%;
+    }
+    .teacher-title{
+      margin-top: 120px;
+      /* margin-bottom: 70px; */
+      color: #000;
+      /* font-family: Futura; */
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 250%; /* 120px */
+      letter-spacing: 4.8px;
+    }
+    .footer{
+      color: #000;
+      text-align: center;
+      /* font-family: Futura; */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 185px;
+      margin-bottom: 30px;
+    }
+
 /* sp */
 .for-sp header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
-  background: #fff;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.80);
 }
 
 .logo {
   font-size: 24px;
+  padding-top: 5px;
 }
+
 
 /*------------------------------
 
@@ -258,11 +402,124 @@ main {
   top: 0;
   left: 100%;/* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: #fff;
+  background: rgba(255, 255, 255, 1);
   transition: .5s;
 }
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer-check:checked ~ .drawer-content {
   left: 0;/* メニューを画面に入れる */
+}
+.sp-mainTitle{
+  text-align: center;
+}
+
+.sp-logo {
+   margin: 0 auto; 
+   margin-bottom: 80px;
+
+}
+
+span {
+  display: inline-block;
+}
+.sp-IEintro{
+  color: #000;
+  text-align: center;
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 250%; /* 40px */
+  letter-spacing: 1.6px;
+}
+
+.sp-more{
+  margin-top: 80px;
+}
+
+.sp-product-title{
+  margin-top: 240px;
+  color: #000;
+  /* font-family: Futura; */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 250%; /* 120px */
+  letter-spacing: 4.8px;
+}
+
+.sp-A h2{
+  color: #000;
+/* font-family: Futura; */
+font-size: 29.838px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.sp-B h2{
+  color: #000;
+/* font-family: Futura; */
+font-size: 29.838px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.sp-C h2{
+  color: #000;
+/* font-family: Futura; */
+font-size: 29.838px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.sp-product-more{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.sp-activity-title{
+  margin-top: 160px;
+  color: #000;
+  /* font-family: Futura; */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 250%; /* 120px */
+  letter-spacing: 4.8px;
+}
+
+.sp-activity-content {
+  display: flex;
+  justify-content: center;
+}
+
+.sp-activity-margin{
+  margin-right: 40px;
+}
+
+.sp-activity-content p{
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sp-activity-content p{
+  color: #000;
+/* font-family: Futura; */
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.suga-url{
+  color: inherit;
+}
+
+.margin80{
+  margin-top: 80px;
 }

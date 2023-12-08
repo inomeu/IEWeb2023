@@ -1,0 +1,457 @@
+/* noto sans JPのインストール */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+  /* フォントの決定, 英語はFutura 日本語はNoto, windowsは全部Notoになっちゃうかも*/
+  font-family: Futura, 'Noto Sans JP', 'Century Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+}
+
+/* PCとSP(スマホ)の切り替え, 画面幅で切り替え */
+.for-pc {
+  display: block;
+}
+
+.for-sp {
+  display: none;
+}
+
+@media only screen and (max-width : 837px) {
+  .for-pc {
+    display: none;
+  }
+
+  .for-sp {
+    display: block;
+  }
+}
+
+/* PCヘッダー */
+.inner {
+
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: content-box;
+  }
+  
+  .header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.80);
+    z-index: 100;               /* 重なり順指定 */
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title a {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-nav {
+    margin-left: auto;
+  }
+  
+  .for-pc ul {
+    list-style: none;
+    white-space: nowrap;
+  }
+  
+  .header-nav-list {
+    display: flex;
+  }
+  
+  .header-nav-item:not(:first-child) {
+    margin-left: 30px;
+  }
+  
+  .header-nav-item-link {
+    display: block;
+    color: #333;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  /* SPヘッダー */
+  .for-sp header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.80);
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+
+  /* main */
+
+
+
+  
+  /*------------------------------
+  
+    ここから下がハンバーガーメニュー
+    に関するCSS
+  
+  ------------------------------*/
+    
+  /* チェックボックスは非表示に */
+  .drawer-hidden {
+    display: none;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer-open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+  }
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer-open span,
+  .drawer-open span:before,
+  .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+  
+  /* 三本線のうち一番上の棒の位置調整 */
+  .drawer-open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線のうち一番下の棒の位置調整 */
+  .drawer-open span:after {
+    top: 8px;
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .drawer-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer-check:checked ~ .drawer-content {
+    left: 0;/* メニューを画面に入れる */
+  }
+
+
+  /* 本文 */
+  main {
+    margin-top: 111px;
+    /* ヘッダーの幅は111px */
+    text-align: center;
+    margin: px 111px 8%; 
+  }
+
+  h1{
+    margin: 0;
+  }
+  h2{
+    margin: 0;
+  }
+  img{
+    margin-top: 0;
+  }
+  
+  .margin50{
+    margin-top: 50px;
+  }
+  .margin80{
+    margin-top: 80px;
+  }
+  .margin240{
+    margin-top: 240px;
+  }
+
+  .title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .concept-title{
+    color: #000;
+    text-align: center;
+    /* font-family: Futura; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .concept-name{
+    color: #404040;
+    /* font-family: Futura; */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%; /* 80px */
+    letter-spacing: 3.2px;
+  }
+
+  .concept-p{
+    color: #404040;
+    /* font-family: Futura; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%;
+    letter-spacing: 1.6px;
+  }
+
+  .concept-field {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    }
+
+  .content-space{
+    margin-right: 80px;
+  }
+
+  .structure-title{
+    color: #000;
+    text-align: center;
+    /* font-family: Futura; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+  
+  .process-title{
+    color: #000;
+    text-align: center;
+    /* font-family: Futura; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .down{
+    margin: 20 0;
+  }
+
+  .process-content{
+    margin-top: 80px;
+  }
+  
+  .process-p{
+    color: #000;
+    /* font-family: YuGothic; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .gallery-title{
+    color: #000;
+    text-align: center;
+    /* font-family: Futura; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+    
+  }
+
+  .gallery-img01{
+    margin-right: 40px;
+  }
+  .gallery-img02{
+    margin-top: 80px;
+  }
+  .gallery-img03{
+    margin-left: 40px;
+  }
+  .gallery-img04{
+    margin-right: 40px;
+  }
+  .gallery-img05{
+    margin-top: 40px;
+  }
+  .gallery-img06{
+    margin-left: 40px;
+  }
+
+  .footer{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 185px;
+    margin-bottom: 30px;
+  }
+
+  /* sp */
+
+  .sp-title-name{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-concept-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-concept-name{
+    color: #404040;
+    /* font-family: Futura; */
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%; /* 80px */
+    letter-spacing: 3.2px;
+  }
+
+  .sp-concept-p{
+    color: #404040;
+    /* font-family: Futura; */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 250%;
+    letter-spacing: 1.6px;
+  }
+
+  .sp-structure-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+  
+  .sp-process-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-process-p{
+    color: #000;
+    /* font-family: YuGothic; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .sp-gallery-title{
+    color: #000;
+    /* font-family: Futura; */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 250%; /* 120px */
+    letter-spacing: 4.8px;
+  }
+
+  .sp-gallery-img01{
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img02{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img03{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img04{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img05{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .sp-gallery-img06{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  
+  
+  span {
+    display: inline-block;
+    }
